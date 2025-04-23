@@ -1,5 +1,5 @@
 import streamlit as st
-from notion_client import AsyncClient
+from notion_client import Client
 import os
 from dotenv import load_dotenv
 from datetime import datetime
@@ -26,7 +26,7 @@ utils.local_css("estilos.css")
 load_dotenv()
 
 # Configurar cliente de Notion
-notion = AsyncClient(auth=os.getenv(""))
+notion = Client(auth=os.getenv(""))
 
 # Formulario Streamlit
 
@@ -140,7 +140,7 @@ if enviar:
     document_ID = "1ddfc20415a680188fdcf6a1859386ea"
 
     # Inicializar el cliente
-    notion = AsyncClient(auth=notion_api_key)
+    notion = Client(auth=notion_api_key)
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Enviar datos a Notion
