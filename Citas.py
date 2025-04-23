@@ -136,7 +136,7 @@ if enviar:
     
     # Notion
     
-    notion_api_key = st.secrets["notion_api_key"]
+    notion_api_key = "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"
     document_ID = "1ddfc20415a680188fdcf6a1859386ea"
 
     # Inicializar el cliente
