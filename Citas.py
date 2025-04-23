@@ -135,6 +135,7 @@ if enviar:
         p=150*personas
     
     # Notion
+    
     notion_api_key = st.secrets["notion_api_key"]
     document_ID = "1ddfc20415a680188fdcf6a1859386ea"
 
